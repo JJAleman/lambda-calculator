@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials.js";
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
@@ -12,6 +13,7 @@ function App() {
 
   const [displayNums, setDisplayNums] = useState("");
   const [displayOps, setDisplayOps] = useState("");
+  const [displaySpecials, setDisplaySpecials] = useState("");
 
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -23,6 +25,7 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
+        <Specials display={displaySpecials} setDisplay={setDisplaySpecials}/>
         <Numbers display={displayNums} setDisplay={setDisplayNums} />
         <Operators display={displayOps} setDisplay={setDisplayOps}/>
 
