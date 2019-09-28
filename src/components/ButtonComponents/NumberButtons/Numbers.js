@@ -9,7 +9,7 @@ import { numbers } from '../../../data'
 */
 //Import your array data to from the provided data file
 
-export default function Numbers({ display, setDisplay }) {
+export default function Numbers(props) {
   const [numberState] = useState(numbers);
   console.log(numberState);
   // STEP 2 - add the imported data to state
@@ -20,8 +20,7 @@ export default function Numbers({ display, setDisplay }) {
         <NumberButton
           key={index}
           nums={num}
-          display={display}
-          setDisplay={setDisplay}
+          displayNum={props.displayNum}
         />
       ))}
       {/* // STEP 3 - Use .map() to iterate over your array data and return a button

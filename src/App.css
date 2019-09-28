@@ -5,6 +5,9 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    
 }
 .display {
     margin-top: 25px;
@@ -20,3 +23,31 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    background: #215c9e;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.operator-buttons {
+    background: #2a7293;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
